@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Subscriber Sign-Up</title>
+
+<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+
+
+<link th:href="@{/css/subscribindex.css}" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<!--  -->
+	<!-- 
+
+	private String gender;
+	private String note;
+	private String profecsion;
+  -->
+	<h3>Successfully Subscribed</h3>
+	<p>Thank you for signing up!</p>
+	<div class="resultImg">
+		<a href="subscriberindex" target="">
+			<h4 class="imgh1padg">Subscribe</h4> <!-- using css instead 
+			<img class="resultImg" 	src="../images/Flower4.PNG" alt="IMG">  -->
+		</a>
+	</div>
+		<br>
+	<div class="resultImgWrap">
+
+		<div class="row panelcenter ">
+			<div>
+				<div class="col-md-6">
+					<div class="panel panel-primary ">
+						<div class="panel-heading">
+							<p class="Subscriberpanelpanelheading">Subscriber:</p>
+						</div>
+						<div class="panel-body">
+
+							<div class="row">
+								<div class="col-md-6">First Name:</div>
+								<div class="col-md-6">
+									<span th:text="${firstName}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">Last Name:</div>
+								<div class="col-md-6">
+									<span th:text="${lastName}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">User Name:</div>
+								<div class="col-md-6">
+									<span th:text="${userName}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">Gender:</div>
+								<div class="col-md-6">
+									<span th:text="${gender}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">Profession:</div>
+								<div class="col-md-6">
+									<span th:text="${profecsion}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">Note:</div>
+								<div class="col-md-6">
+									<span th:text="${note}"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">ID:</div>
+								<div class="col-md-6">
+									<span th:text="${id}"></span>
+								</div>
+							</div>
+
+						</div>
+						<div class="panel-footer">
+							<!-- Link to Update -->
+							<!-- Link to Show  -->
+							<!--  Link to Destroy -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- 
+	<a href="subscriberindex" target=""> <img class="resultImg"
+		src="../images/Flower4.PNG" alt="IMG">
+	</a>  -->
+
+
+
+	<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+
+	<!-- <div>
+		<table class="tablePos">
+			<thead>
+				<h4>Subscriber:</h4>
+			</thead>
+			<tr>
+				<td>First Name:</td>
+				<td><span th:text="${firstName}"></span></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><span th:text="${lastName}"></span></td>
+			</tr>
+			<tr>
+				<td>User Name:</td>
+				<td><span th:text="${userName}"></span></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><span th:text="${gender}"></span></td>
+			</tr>
+			<tr>
+				<td>Profession:</td>
+				<td><span th:text="${profecsion}"></span></td>
+			</tr>
+			<tr>
+				<td>Note:</td>
+				<td><span th:text="${note}"></span></td>
+			</tr>
+			<tr>
+				<td>ID:</td>
+				<td><span th:text="${id}"></span></td>
+			</tr>
+		</table>
+
+	</div> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
